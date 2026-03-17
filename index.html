@@ -375,15 +375,15 @@
       <span id="hero-lastname">Mewara</span>
     </h1>
     <div class="hero-title" id="hero-subtitle">// Fresh grad · passionate learner · building one project at a time</div>
-    <p class="hero-bio" id="hero-bio">I'm a recent graduate passionate about data science and machine learning. I love diving into datasets, spotting patterns, and building models that tell a story. Actively seeking entry-level roles and internships where I can contribute, learn fast, and grow alongside a great team.</p>
+    <p class="hero-bio" id="hero-bio">I'm a recent graduate passionate about data science and machine learning. I love diving into datasets, spotting patterns, and building models that tell a story. Actively seeking entry-level roles and internships where I can contribute, learn fast, and grow.</p>
     <div class="hero-actions">
       <button class="btn-primary" id="hero-cta1" onclick="scrollTo(document.getElementById('projects'))">View Projects</button>
       <button class="btn-outline" id="hero-cta2" onclick="scrollTo(document.getElementById('contact'))">Get in Touch</button>
     </div>
     <div class="hero-stats">
-      <div><div class="stat-num" id="stat1-num">5+</div><div class="stat-label" id="stat1-label">Years Experience</div></div>
-      <div><div class="stat-num" id="stat2-num">20+</div><div class="stat-label" id="stat2-label">Projects Done</div></div>
-      <div><div class="stat-num" id="stat3-num">∞</div><div class="stat-label" id="stat3-label">Certifications</div></div>
+      <div><div class="stat-num" id="stat1-num">5+</div><div class="stat-label" id="stat1-label">Projects Built</div></div>
+      <div><div class="stat-num" id="stat2-num">3+</div><div class="stat-label" id="stat2-label">Certifications</div></div>
+      <div><div class="stat-num" id="stat3-num">∞</div><div class="stat-label" id="stat3-label">Curiosity</div></div>
     </div>
   </div>
 </section>
@@ -408,8 +408,8 @@
     </div>
     <div class="about-text fade-up">
       <h3 id="about-heading">Fresh eyes,<br><em>hungry to learn.</em></h3>
-      <p id="about-p1">I'm an entry-level data scientist with hands-on experience in Python, data analysis, and machine learning through self-driven projects and coursework. I'm detail-oriented, a fast learner, and genuinely excited about solving problems with data.</p>
-      <p id="about-p2">Outside of coding, I spend time on Kaggle, reading ML research, and building portfolio projects I'm proud of. I'm ready to bring energy, curiosity, and dedication to my first professional data role.</p>
+      <p id="about-p1">I'm an entry-level data scientist with hands-on experience in Python, data analysis, and ML through self-driven projects and coursework. I'm detail-oriented, a fast learner, and genuinely excited about solving problems with data.</p>
+      <p id="about-p2">Outside of coding I spend time on Kaggle, reading ML research, and building portfolio projects I'm proud of. I'm ready to bring energy, curiosity, and dedication to my first professional data role.</p>
       <div class="skills-wrap">
         <div class="skills-label">Core Skills</div>
         <div class="skills-grid" id="skills-container"></div>
@@ -474,7 +474,7 @@
   <div class="contact-grid">
     <div class="contact-info fade-up">
       <h3 id="contact-heading">Open to <em style="color:var(--accent)">opportunities</em> &amp; collaborations.</h3>
-      <p id="contact-desc">I'm actively seeking entry-level data science roles and internships. If you're hiring or open to collaborating on a project, I'd love to connect!</p>
+      <p id="contact-desc">Actively seeking entry-level data science roles and internships. If you're hiring or open to collaborating on a project, I'd love to connect!</p>
       <div class="contact-links" id="contact-links-container"></div>
     </div>
     <div class="fade-up" style="display:flex;align-items:center;justify-content:center;">
@@ -583,7 +583,7 @@
         </div>
         <div class="form-group"><label>Role / Tagline</label><input type="text" class="form-control" id="p-role" value="Entry-Level Data Scientist &amp; ML Enthusiast"></div>
         <div class="form-group"><label>Subtitle Line</label><input type="text" class="form-control" id="p-subtitle" value="// Fresh grad · passionate learner · building one project at a time"></div>
-        <div class="form-group"><label>Bio (Hero)</label><textarea class="form-control" id="p-bio">I'm a recent graduate passionate about data science and machine learning. I love diving into datasets, spotting patterns, and building models that tell a story. Actively seeking entry-level roles where I can contribute and grow.</textarea></div>
+        <div class="form-group"><label>Bio (Hero)</label><textarea class="form-control" id="p-bio">I'm a recent graduate passionate about data science and machine learning. Actively seeking entry-level roles where I can contribute and grow.</textarea></div>
         <div class="section-divider"></div>
         <div class="add-form-title">About Section</div>
         <div class="form-group"><label>About Heading</label><input type="text" class="form-control" id="p-about-heading" value="Fresh eyes, hungry to learn."></div>
@@ -676,7 +676,7 @@
           <div class="add-form-title">Add / Edit Experience</div>
           <input type="hidden" id="edit-exp-id" value="">
           <div class="admin-form-row">
-            <div class="form-group"><label>Role / Title</label><input type="text" class="form-control" id="exp-role" placeholder="e.g. Data Science Intern"></div>
+            <div class="form-group"><label>Role / Title</label><input type="text" class="form-control" id="exp-role" placeholder="e.g. Senior Data Scientist"></div>
             <div class="form-group"><label>Company</label><input type="text" class="form-control" id="exp-company" placeholder="e.g. Google"></div>
           </div>
           <div class="form-group"><label>Duration</label><input type="text" class="form-control" id="exp-date" placeholder="e.g. Jan 2022 — Present"></div>
@@ -778,6 +778,10 @@
           <button class="btn-edit" onclick="setBg('#0a0a18','#0f0f24')">Midnight Blue</button>
         </div>
         <div class="section-divider"></div>
+        <div class="add-form-title">Data Management</div>
+        <div style="font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--muted);margin-bottom:12px;line-height:1.7;">All your admin changes (projects, certs, skills etc.) are saved to this browser automatically. Use the button below to wipe saved data and restore defaults.</div>
+        <button class="btn-delete" style="padding:10px 24px;font-size:0.75rem;" onclick="resetAllData()">⚠ Reset All Data to Defaults</button>
+        <div class="section-divider"></div>
         <div class="add-form-title">Change Admin Password</div>
         <div class="admin-form-row">
           <div class="form-group"><label>New Password</label><input type="password" class="form-control" id="new-pass"></div>
@@ -803,9 +807,8 @@ function savePasswordToStorage(pw) {
 }
 
 // ===== DATA STORE =====
-let DATA = {
-  get password() { return getSavedPassword(); },
-  set password(v) { savePasswordToStorage(v); },
+// ===== DEFAULT DATA (used only when localStorage is empty) =====
+const DEFAULT_DATA = {
   skills: ['Python','SQL','Pandas','NumPy','Matplotlib','Seaborn','scikit-learn','TensorFlow','Jupyter','Git','Statistics','Power BI'],
   projects: [
     { id:1, title:'House Price Prediction', tag:'ML / Regression', desc:'Built a regression model to predict house prices using feature engineering and gradient boosting. Explored 79 features, handled missing values, and tuned hyperparameters to minimise RMSE.', tech:['Python','scikit-learn','Pandas','Seaborn'], github:'https://github.com/nk019', demo:'', img:'' },
@@ -834,6 +837,51 @@ let DATA = {
     { id:3, label:'GitHub', value:'github.com/nk019', url:'https://github.com/nk019', icon:'🐙' },
     { id:4, label:'Kaggle', value:'kaggle.com/nikhileshmewara', url:'https://www.kaggle.com/nikhileshmewara', icon:'🏆' },
   ]
+};
+
+// ===== localStorage PERSISTENCE ENGINE =====
+const STORE_KEY = 'ds_portfolio_data';
+
+function loadData() {
+  try {
+    const saved = localStorage.getItem(STORE_KEY);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      // Merge saved over defaults so new default fields still appear if missing
+      return Object.assign({}, DEFAULT_DATA, parsed);
+    }
+  } catch(e) {}
+  return JSON.parse(JSON.stringify(DEFAULT_DATA)); // deep clone defaults
+}
+
+function saveData() {
+  try {
+    // Save everything except password (has its own key)
+    const toSave = {
+      skills: DATA.skills,
+      projects: DATA.projects,
+      certifications: DATA.certifications,
+      experience: DATA.experience,
+      books: DATA.books,
+      contactLinks: DATA.contactLinks,
+    };
+    localStorage.setItem(STORE_KEY, JSON.stringify(toSave));
+  } catch(e) {
+    showToast('⚠️ Could not save — localStorage full?');
+  }
+}
+
+// Load persisted data into DATA
+const _loaded = loadData();
+let DATA = {
+  get password() { return getSavedPassword(); },
+  set password(v) { savePasswordToStorage(v); },
+  skills: _loaded.skills,
+  projects: _loaded.projects,
+  certifications: _loaded.certifications,
+  experience: _loaded.experience,
+  books: _loaded.books,
+  contactLinks: _loaded.contactLinks,
 };
 
 // ===== CURSOR =====
@@ -1021,6 +1069,7 @@ function saveBook() {
   else DATA.books.push(obj);
   ['book-title','book-author','book-cover','book-note'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('edit-book-id').value='';
+  saveData();
   renderBooks();
   showToast('Book saved');
 }
@@ -1035,7 +1084,7 @@ function editBook(id) {
   document.getElementById('book-note').value=b.note||'';
   document.querySelector('#tab-books .add-form').scrollIntoView({behavior:'smooth'});
 }
-function deleteBook(id) { DATA.books=DATA.books.filter(b=>b.id!==id); renderBooks(); showToast('Book removed'); }
+function deleteBook(id) { DATA.books=DATA.books.filter(b=>b.id!==id); saveData(); renderBooks(); showToast('Book removed'); }
 
 function renderContactLinks() {
   const c = document.getElementById('contact-links-container');
@@ -1222,10 +1271,11 @@ function addSkill() {
   if(!val) return;
   DATA.skills.push(val);
   document.getElementById('new-skill').value = '';
+  saveData();
   renderSkills();
   showToast('Skill added');
 }
-function deleteSkill(i) { DATA.skills.splice(i,1); renderSkills(); showToast('Skill removed'); }
+function deleteSkill(i) { DATA.skills.splice(i,1); saveData(); renderSkills(); showToast('Skill removed'); }
 
 // ===== PROJECTS =====
 let projCounter = 10;
@@ -1246,6 +1296,7 @@ function saveProject() {
   else DATA.projects.push(obj);
   ['proj-title','proj-tag','proj-desc','proj-tech','proj-github','proj-demo','proj-img'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('edit-project-id').value='';
+  saveData();
   renderProjects();
   showToast('Project saved');
 }
@@ -1261,7 +1312,7 @@ function editProject(id) {
   document.getElementById('proj-img').value=p.img;
   document.querySelector('#tab-projects .add-form').scrollIntoView({behavior:'smooth'});
 }
-function deleteProject(id) { DATA.projects=DATA.projects.filter(p=>p.id!==id); renderProjects(); showToast('Project removed'); }
+function deleteProject(id) { DATA.projects=DATA.projects.filter(p=>p.id!==id); saveData(); renderProjects(); showToast('Project removed'); }
 
 // ===== CERTS =====
 let certCounter = 10;
@@ -1281,6 +1332,7 @@ function saveCert() {
   else DATA.certifications.push(obj);
   ['cert-name','cert-issuer','cert-date','cert-emoji','cert-url'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('edit-cert-id').value='';
+  saveData();
   renderCerts();
   showToast('Certification saved');
 }
@@ -1294,7 +1346,7 @@ function editCert(id) {
   document.getElementById('cert-url').value=c.url;
   document.querySelector('#tab-certifications .add-form').scrollIntoView({behavior:'smooth'});
 }
-function deleteCert(id) { DATA.certifications=DATA.certifications.filter(c=>c.id!==id); renderCerts(); showToast('Certification removed'); }
+function deleteCert(id) { DATA.certifications=DATA.certifications.filter(c=>c.id!==id); saveData(); renderCerts(); showToast('Certification removed'); }
 
 // ===== EXPERIENCE =====
 let expCounter = 10;
@@ -1313,6 +1365,7 @@ function saveExp() {
   else DATA.experience.push(obj);
   ['exp-role','exp-company','exp-date','exp-desc','exp-skills'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('edit-exp-id').value='';
+  saveData();
   renderExperience();
   showToast('Experience saved');
 }
@@ -1326,7 +1379,7 @@ function editExp(id) {
   document.getElementById('exp-skills').value=e.skills.join(', ');
   document.querySelector('#tab-experience .add-form').scrollIntoView({behavior:'smooth'});
 }
-function deleteExp(id) { DATA.experience=DATA.experience.filter(e=>e.id!==id); renderExperience(); showToast('Experience removed'); }
+function deleteExp(id) { DATA.experience=DATA.experience.filter(e=>e.id!==id); saveData(); renderExperience(); showToast('Experience removed'); }
 
 // ===== CONTACT =====
 let clCounter = 10;
@@ -1346,10 +1399,25 @@ function saveContactLink() {
   if(!obj.label) return;
   DATA.contactLinks.push(obj);
   ['cl-label','cl-value','cl-url','cl-icon'].forEach(id=>document.getElementById(id).value='');
+  saveData();
   renderContactLinks();
   showToast('Link added');
 }
-function deleteContactLink(id) { DATA.contactLinks=DATA.contactLinks.filter(c=>c.id!==id); renderContactLinks(); showToast('Link removed'); }
+function deleteContactLink(id) { DATA.contactLinks=DATA.contactLinks.filter(c=>c.id!==id); saveData(); renderContactLinks(); showToast('Link removed'); }
+
+function resetAllData() {
+  if (!confirm('This will wipe ALL your saved changes and restore defaults. Are you sure?')) return;
+  try { localStorage.removeItem(STORE_KEY); } catch(e) {}
+  const fresh = JSON.parse(JSON.stringify(DEFAULT_DATA));
+  DATA.skills = fresh.skills;
+  DATA.projects = fresh.projects;
+  DATA.certifications = fresh.certifications;
+  DATA.experience = fresh.experience;
+  DATA.books = fresh.books;
+  DATA.contactLinks = fresh.contactLinks;
+  renderAll();
+  showToast('Data reset to defaults');
+}
 
 // ===== THEME =====
 function setColor(varName, btn) {
